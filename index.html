@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Challenge ONE</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body class="home">
+    <header>
+      <nav>
+        <a href="#"
+          ><img src="img figma/LogoLogo 2x.png" alt="logoAlura" id="alura"
+        /></a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="inMssg">
+        <textarea
+          name="inputMssg"
+          id="textBox"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui..."
+        ></textarea>
+
+        <p class="disclaimer">&#9888; Solo letras minúsculas y sin acentos</p>
+        <div class="buttons">
+          <button id="btnEncriptar">Encriptar</button>
+          <button id="btnDesencriptar">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="outMssg">
+        <div class="coverBox">
+          <div class="noTexto">
+            <img
+              src="img figma/Muñeconino diamante 2x.png"
+              alt="Persona examinando un diamante con lupa"
+              id="diamante"
+            />
+
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+
+          <div class="rta">
+            <textarea
+              name="txtEncriptado"
+              id="textoRespuesta"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="btnAccion">
+              <button id="btnCopiar">Copiar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright. Todos los derechos reservados. 2024.</p>
+      <!-- <p>Desarrollado por Laura Marquez</p> -->
+      <img
+        src="img figma/Laura Marquez-logos_white.png"
+        alt="Logo del desarrollador"
+        id="lm"
+      />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

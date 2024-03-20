@@ -1,0 +1,268 @@
+.home {
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+#alura {
+    margin: auto;
+    padding: 32px 29px;
+    width: 120px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.inMssg {
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 3% 0 0 14%;
+    text-align: center;
+}
+
+#textBox {
+    width: 90%;
+    height: 95vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    background-color: #F3F5FC;
+    border-color: #F3F5FC;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+    margin-bottom: 30px;
+
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.disclaimer {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #495057;
+    text-align: left;
+    margin: 0 6%;
+    padding: 8px;
+}
+
+.buttons {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin: auto;
+
+}
+
+#btnEncriptar {
+    width: 332px;
+    height: 67px;
+    border-radius: 22px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 24px;
+    text-decoration: none;
+    transition: all 200ms ease;
+    margin: 5px;
+}
+
+#btnDesencriptar,
+#btnCopiar {
+    width: 332px;
+    height: 67px;
+    border-radius: 22px;
+    margin: 5px;
+    background-color: #D8DFE8;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 24px;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+#btnEncriptar:hover,
+#btnDesencriptar:hover,
+#btnCopiar:hover {
+    background-color: rgb(255, 255, 255);
+    color: #356EA9;
+    border: 2px solid #356EA9;
+}
+
+
+.outMssg {
+    width: 35%;
+    height: auto;
+    display: flex;
+    margin: auto 0 auto;
+    box-sizing: border-box;
+}
+
+
+.coverBox {
+    width: 90%;
+    height: 130vh;
+    background-color: #ffffff;
+    box-shadow: 1px 10px 12px 0px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto 32px 32px;
+    box-sizing: border-box;
+    display: grid;
+}
+
+.noTexto {
+    height: 100%;
+}
+
+.coverBox h1 {
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: auto;
+    padding: 30px 30px 20px 30px;
+
+}
+
+.coverBox p {
+    color: #495057;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#diamante {
+    margin-top: 30%;
+    width: 90%;
+}
+
+.rta {
+    width: auto;
+    height: 95%;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+#textoRespuesta {
+    width: 70%;
+    height: 60%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+    margin: 20px auto;
+    padding: 2px;
+}
+
+.btnAccion {
+    width: auto;
+    height: 32%;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    align-items: end;
+}
+
+#btnCopiar {
+    width: 80%;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #0A3871;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+
+#lm {
+    width: 10%;
+    height: auto;
+}
+
+/*Media query para tablet y mobil*/
+
+@media only screen and (max-device-width: 1024px) {
+
+    #diamante {
+        display: none;
+    }
+
+    /* Hacer que los elementos de inMssg y outMssg estén en columna uno debajo del otro */
+    .container {
+        flex-direction: column;
+    }
+
+    .inMssg {
+        width: 100%;
+        height: auto;
+        padding: 3% 0;
+    }
+
+    .outMssg {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    .coverBox {
+        width: 90%;
+        height: auto;
+    }
+
+    .rta {
+        width: auto;
+        height: auto;
+
+    }
+
+    #textoRespuesta {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .btnAccion {
+        width: auto;
+        height: auto;
+
+    }
+
+    #btnCopiar {
+        width: 50%;
+        margin: 25px auto;
+    }
+}
